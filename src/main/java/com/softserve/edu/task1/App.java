@@ -18,6 +18,6 @@ public class App {
         int height = dataValidation.getHeight();
         int width = dataValidation.getWidth();
         Desk desk = new Desk(height, width);
-        desk.paint();
+        desk.paint(System.out);
     }
 }

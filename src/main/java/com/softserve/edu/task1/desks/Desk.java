@@ -1,5 +1,7 @@
 package com.softserve.edu.task1.desks;
 
+import java.io.PrintStream;
+
 /**
  * represent chess desk
  * Created by cdc89 on 25.05.2017.
@@ -16,13 +18,13 @@ public class Desk {
     /**
      * paint chess desk to the console
      */
-    public void paint() {
+    public void paint(PrintStream out) {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 if ((x + y) % 2 == 0) {
-                    System.out.print("*");
+                    out.print("*");
                 } else {
-                    System.out.print(" ");
+                    out.print(" ");
                 }
             }
             System.out.println();
