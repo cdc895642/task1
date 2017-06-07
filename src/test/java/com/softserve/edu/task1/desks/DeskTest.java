@@ -90,7 +90,8 @@ public class DeskTest {
                                                       outContent, int
                                                       height, int width) {
         String[][] result = new String[height][width];
-        char[] temp = outContent.toString().toCharArray();
+        String out=outContent.toString().replaceAll("[\\r\\n]", "");
+        char[] temp = out.toCharArray();
         int current = 0;
         for (int y = 0; y < height; y++) {
             String[] line = new String[width];
