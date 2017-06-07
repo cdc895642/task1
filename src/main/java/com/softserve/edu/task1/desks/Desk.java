@@ -27,7 +27,7 @@ public class Desk {
                     out.print(" ");
                 }
             }
-            System.out.println();
+            out.println();
         }
     }
 }
